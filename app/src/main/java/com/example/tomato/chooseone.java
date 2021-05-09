@@ -17,6 +17,8 @@ public class chooseone extends AppCompatActivity {
         chef=findViewById(R.id.chef);
         customer=findViewById(R.id.customer);
         deliveryperson=findViewById(R.id.delivery);
+        Intent intent = getIntent();
+        type = intent.getStringExtra("Home").toString().trim();
 
         chef.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,17 +26,19 @@ public class chooseone extends AppCompatActivity {
                 if(type.equals("Mail")){
                     Intent loginmail=new Intent(chooseone.this,cheflogin.class);
                     startActivity(loginmail);
+                   // finish();
 
                 }
                 if(type.equals("Phone")){
                     Intent loginphone=new Intent(chooseone.this,chefloginphone.class);
                     startActivity(loginphone);
+                   // finish();
 
                 }
                 if(type.equals("SignUp")){
                     Intent signup=new Intent(chooseone.this,chefregistration.class);
                     startActivity(signup);
-
+                    //finish();
                 }
 
             }
@@ -45,16 +49,19 @@ public class chooseone extends AppCompatActivity {
                 if(type.equals("Mail")){
                     Intent loginmailcust=new Intent(chooseone.this,login.class);
                     startActivity(loginmailcust);
+                   // finish();
 
                 }
                 if(type.equals("Phone")){
                     Intent loginphonecust=new Intent(chooseone.this,loginphone.class);
                     startActivity(loginphonecust);
+                    //finish();
 
                 }
                 if(type.equals("SignUp")){
                     Intent signupcust=new Intent(chooseone.this,registration.class);
                     startActivity(signupcust);
+                    //finish();
 
                 }
             }
@@ -65,16 +72,19 @@ public class chooseone extends AppCompatActivity {
                 if(type.equals("Mail")){
                     Intent loginmaildelivery=new Intent(chooseone.this,deliverylogin.class);
                     startActivity(loginmaildelivery);
+                    //finish();
 
                 }
                 if(type.equals("Phone")){
                     Intent loginphonedelivery=new Intent(chooseone.this,deliveryloginphone.class);
                     startActivity(loginphonedelivery);
+                    //finish();
 
                 }
                 if(type.equals("SignUp")){
                     Intent signupdelivery=new Intent(chooseone.this,deliveryregistration.class);
                     startActivity(signupdelivery);
+                    //finish();
 
                 }
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53945720580",
+    "project_id": "tomato-5b656",
+    "storage_bucket": "tomato-5b656.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53945720580:android:4fe227eac151eb2446fa51",
+        "android_client_info": {
+          "package_name": "com.example.tomato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53945720580-se37tu1tvc1mnnsmvdi2lj68lfg9lrud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZGA--mUkjOjl8QiQKG4Z69iolgjOY1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53945720580-se37tu1tvc1mnnsmvdi2lj68lfg9lrud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

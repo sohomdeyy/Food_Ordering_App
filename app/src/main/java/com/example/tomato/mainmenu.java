@@ -67,7 +67,7 @@ public class mainmenu extends AppCompatActivity {
                 Intent intent1 = new Intent(mainmenu.this, chooseone.class);
                 intent1.putExtra("Home", "Mail");
                 startActivity(intent1);
-                finish();
+                //finish();
             }
         });
         signphone.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +76,7 @@ public class mainmenu extends AppCompatActivity {
                 Intent intent2 = new Intent(mainmenu.this, chooseone.class);
                 intent2.putExtra("Home", "Phone");
                 startActivity(intent2);
-                finish();
+                //finish();
             }
         });
         signup.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +85,7 @@ public class mainmenu extends AppCompatActivity {
                 Intent intent3 = new Intent(mainmenu.this, chooseone.class);
                 intent3.putExtra("Home", "SignUp");
                 startActivity(intent3);
-                finish();
+                //finish();
             }
         });
     }

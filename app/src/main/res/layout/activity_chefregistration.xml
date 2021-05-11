@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="@drawable/pizza1"
     tools:context=".chefregistration">
 
@@ -198,7 +199,7 @@
             <TextView
                 android:id="@+id/txt1"
                 android:layout_width="320dp"
-                android:layout_height="40dp"
+                android:layout_height="20dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
@@ -220,14 +221,14 @@
 
             <TextView
                 android:id="@+id/txt4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="320dp"
+                android:layout_height="20dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:text="city"
+                android:text=" city"
                 android:textSize="18sp" />
 
             <Spinner
@@ -244,12 +245,96 @@
                 android:id="@+id/register"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:text="Sign up" />
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/button_shape"
+                android:text="Sign up"
+                android:textSize="18sp"
+                app:backgroundTint="@color/green" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:id="@+id/hr"
+                    android:layout_width="115dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/Black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/or"
+                    android:layout_width="44dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="OR"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:id="@+id/dr"
+                    android:layout_width="115dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/Black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Sign In With"
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnred"
+                    android:text="Email" />
+
+                <Button
+                    android:id="@+id/Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnred"
+                    android:text="Phone" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
